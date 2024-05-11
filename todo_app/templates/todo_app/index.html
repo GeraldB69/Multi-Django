@@ -1,0 +1,33 @@
+{% extends '../base.html' %}
+
+{% block title %}My Tasks | {% endblock %}
+
+{% block content %}
+<h2>Task List ({{ tasks.count }})</h2>
+
+<hr/>
+<div style="padding: 1em;">
+    {% for task in tasks %}
+    <div style="{% if task.closed %}color: #bbbbbb;{% endif %}">
+        <b>{{ task.pk}}. {{ task.title }}</b> ({{task.description}})<br/>
+        <i>{{ task.updated_at }}</i><br/>
+        {% if not task.closed %}
+        <a href="{% url 'task-close' task.pk %}">Close</a>
+        <a href="{% url 'task-update' task.pk %}">Update</a>
+        {% endif %}
+        <a href="{% url 'task-delete' task.pk %}">Delete</a>
+        <hr>
+    </div>
+    {% endfor %}
+
+
+    <form method="post">
+        {% csrf_token %}
+        <div style="text-align: center; padding: 1em;">
+            {{ task_form.title }} <br/>
+            {{ task_form.description }}<br/>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

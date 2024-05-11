@@ -1,0 +1,12 @@
+{% extends '../base.html' %}
+
+{% block title %}Delete task | {% endblock %}
+
+{% block content %}
+<p>Confirm deleete task <strong>{{ task }}</strong> ?</p>
+<a href="{% url 'tasks' %}">Cancel</a>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Confirm">
+</form>
+{% endblock %}
