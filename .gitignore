@@ -38,7 +38,7 @@ media
 .idea/**/libraries
 
 # Custom
-.idea/**/.gitignore
+idea/**/.gitignore
 .idea/**/misc.xml
 .idea/**/modules.xml
 .idea/**/profiles_settings.xml
