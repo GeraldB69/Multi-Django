@@ -1,6 +1,6 @@
 # ToDo App
 
-Liste des tâches réalisée avec Django et Bootstrap.
+Liste des tâches réalisée avec Django, Bootstrap et Django Rest Framework (DRF)
 
 ## Installation
 
@@ -13,9 +13,12 @@ La suite est classique:
 - Intégration des paquets Python: `pip install -r requirements.txt`
 - Génération des fichiers de migration: `python manage.py makemigrations`
 - Intégration des migrations: `python manage.py migrate`
-- Lancement du serveur de développement: `python manage.py runserver`
+- Lancement du serveur de développement: `python manage.py runserver 8888`
 
-Le site est visible ici: <http://localhost:8000>
+Le site est visible ici: <http://localhost:8888/tasks/>
+
+Après avoir créé un "super user" (`python manage.py createsuperuser`), la partie "admin" sera accessible ici: <http://localhost:8888/admin/>
+
 
 ## Apercu
 
