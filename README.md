@@ -1,17 +1,22 @@
 # ToDo App
 
-Liste des tâches réalisée avec Django - version "basique"
+Liste des tâches "minimaliste" réalisée avec Django
 
 ## Installation
 
-- Ajouter la SECRET_KEY dans les settings
-- Créer et activer l'environnement virtuel selon vos préférences
+- Renommer `settings-sample.py` en `settings.py` (dossier `main`) 
+- Générer et ajouter une SECRET_KEY dans les settings (voir [ici](https://djecrety.ir/), par exemple)
+- Créer et activer l'environnement virtuel (peut varier selon les préférences de chacun): `python3 -m venv venv && source venv/bin/activate`
 
 La suite est classique:
 
-- `pip install -r requirements.txt`
-- `python manage.py makemigrations`
-- `python manage.py migrate`
-- `python manage.py runserver`
+- Intégration des paquets Python: `pip install -r requirements.txt`
+- Génération des fichiers de migration: `python manage.py makemigrations`
+- Intégration des migrations: `python manage.py migrate`
+- Lancement du serveur de développement: `python manage.py runserver`
 
 Le site est visible ici: <http://localhost:8000>
+
+## Apercu
+
+![ToDo App](todo_django.png)

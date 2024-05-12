@@ -5,7 +5,7 @@ from todo_app.forms import TaskForm
 from todo_app.models import Task
 
 
-def index(request):
+def index(request: WSGIRequest):
     form = TaskForm
     if request.method == 'POST':
         form = TaskForm(request.POST)
@@ -42,11 +42,6 @@ def close(request: WSGIRequest, pk: int):
     task.save()
     return redirect("tasks")
 
-
-#    context = {
-#        'task': task
-#    }
-#    return render(request, "todo_app/delete.html", context)
 
 def delete(request: WSGIRequest, pk: int):
     task = Task.objects.get(pk=pk)
