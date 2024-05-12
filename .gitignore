@@ -43,6 +43,7 @@ idea/**/.gitignore
 .idea/**/modules.xml
 .idea/**/profiles_settings.xml
 .idea/**/vcs.xml
+.idea/*.iml
 
 # File-based project format
 *.iws
