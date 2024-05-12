@@ -13,9 +13,11 @@ Ca me permet aussi d'avoir rapidement un projet Django de "test" ou des "snippet
 
 ## Les branches
 
+
 ### Branche "main"
 
 C'est la branche qui contient ce ReadMe: seulement les explications du dépôt !
+
 
 ### Branche "django"
 
@@ -26,6 +28,14 @@ On peut aussi clôturer une tâche.
 
 [Lien vers cette branche](https://github.com/GeraldB69/Multi-Django/tree/django)
 
+
 ### Branche "django-bootstrap"
+
+Seul changement avec la version "django" précédente: l'ajout de Bootstrap pour rendre l'interface HTML plus sympa !
+
+[Lien vers cette branche](https://github.com/GeraldB69/Multi-Django/tree/django-bootstrap)
+
+
+### Branche "django-drf"
 
 _Work in progress..._
