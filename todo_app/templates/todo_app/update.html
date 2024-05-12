@@ -3,9 +3,16 @@
 {% block title %}Update task | {% endblock %}
 
 {% block content %}
-<form method="post">
-    {% csrf_token %}
-    {{ edit_form.as_p }}
-    <button type="submit">Modifier</button>
-</form>
+<div class="border rounded p-3 shadow">
+
+    <form method="post">
+        {% csrf_token %}
+        {{ edit_form.as_p }}
+        <div class="text-center">
+            <a href="{% url 'tasks' %}" class="btn btn-outline-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Confirm</button>
+        </div>
+    </form>
+
+</div>
 {% endblock %}

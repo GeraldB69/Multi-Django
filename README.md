@@ -1,6 +1,6 @@
 # ToDo App
 
-Liste des tâches "minimaliste" réalisée avec Django
+Liste des tâches réalisée avec Django et Bootstrap.
 
 ## Installation
 
@@ -19,4 +19,4 @@ Le site est visible ici: <http://localhost:8000>
 
 ## Apercu
 
-![ToDo App](todo_django.png)
+![ToDo App](todo_django-bootstrap.png)

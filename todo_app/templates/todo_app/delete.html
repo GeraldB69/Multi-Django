@@ -3,10 +3,13 @@
 {% block title %}Delete task | {% endblock %}
 
 {% block content %}
-<p>Confirm deleete task <strong>{{ task }}</strong> ?</p>
-<a href="{% url 'tasks' %}">Cancel</a>
-<form method="post">
-    {% csrf_token %}
-    <input type="submit" value="Confirm">
-</form>
+<div class="border rounded p-3 text-center shadow">
+    <p>Confirm delete task <strong>"{{ task }}"</strong> ({{ task.pk }}) ?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <a href="{% url 'tasks' %}" class="btn btn-outline-secondary">Cancel</a>
+        <button type="submit" class="btn btn-danger">Confirm</button>
+    </form>
+</div>
 {% endblock %}
