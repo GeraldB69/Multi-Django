@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third Apps
+    'rest_framework',
+    'rest_framework.authtoken',
 
     # Custom Apps
     'todo_app',
