@@ -38,4 +38,14 @@ Seul changement avec la version "django" précédente: l'ajout de Bootstrap pour
 
 ### Branche "django-drf"
 
+Mise en place de [Django Rest Framework](https://www.django-rest-framework.org/) pour gérer les tâches sous forme d'API.   
+Ajout de tests plus poussés et suppression de toute la partie front créées précédemment.
+
+[Lien vers cette branche](https://github.com/GeraldB69/Multi-Django/tree/django-drf)
+
+
+### Branche "django-drf-js"
+
+Comment utiliser notre API DRF depuis le front...
+
 _Work in progress..._
